@@ -1,17 +1,15 @@
-import Image from "next/image";
+
 import Students from "./components/students";
 
 export default function Home() {
-// let name="Maryam";
-// let city="Karachi";
-let obj={
-  name: "Civics",
-  model:"cv2234"
-}
+const name="Maryam";
+const city="Karachi";
+const age= 20;
+const qualifications="B.com";
   return (
     <div> 
-  {/* <Students name = {name} city= {city} /> */}
-  <Students object = {obj}  />
+  <Students name = {name} city= {city} age={age} qualifications={qualifications}/>
+  
   </div>
   );
 }

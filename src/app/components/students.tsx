@@ -1,14 +1,14 @@
-export default function Students(data:any) {
+export default function Students(data:{name:string,city:string,age:number,qualifications:string}) {
  
     return (
       <div> 
           
-       {/* <h1><b><u>Students Data</u></b></h1>
-       <h3>Name:{data.name}</h3>
-       <p>City:{data.city}</p> */}
-       <h1><b><u>Car Data</u></b></h1>
-       <h3>Name:{data.object.name}</h3>
-       <p>Model:{data.object.model}</p>
+   <h1 style={{backgroundColor :"grey", fontSize:"30px", margin:"10px", border:"black 2px solid", borderRadius:"10px" }}>Students Data:</h1>
+       <p style={{backgroundColor :"lightgreen", fontSize:"20px", margin:"10px", border:"black 2px solid", borderRadius:"10px" }}>Name:{data.name}</p>
+       <p style={{backgroundColor :"lightgreen", fontSize:"20px", margin:"10px", border:"black 2px solid", borderRadius:"10px" }}>City:{data.city}</p>
+       <p style={{backgroundColor :"lightgreen", fontSize:"20px", margin:"10px", border:"black 2px solid", borderRadius:"10px" }}>Age:{data.age}</p>
+       <p style={{backgroundColor :"lightgreen", fontSize:"20px", margin:"10px", border:"black 2px solid", borderRadius:"10px" }}>Qualifications:{data.qualifications}</p>
+       
       </div>
     );
   }
